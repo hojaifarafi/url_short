@@ -22,7 +22,11 @@ async function handle2(req,res){
     redirectUrl: ru.url
   })
   console.log(URL,ru)
-  res.send('post')
+  res.redirect("/")
 }
-
-export {handle1,handle2}
+async function handle3(req,res) {
+  const x = await URL.find()
+  // res.render("home",{"urls":x})
+  res.render("home",{"urls":x})
+}
+export {handle1,handle2,handle3}

@@ -6,7 +6,7 @@ import connectToMongoDB from "./connect.js"
 import mongoose from "mongoose";
 const PORT = 3000;
 
-mongoose.connect("mongodb://localhost:27017/short_url");
+mongoose.connect("mongodb+srv://poderalo71:86011572@claster0.av8coo8.mongodb.net/?retryWrites=true&w=majority&appName=claster0/test");
   //.then(()=> {console.log("mongodb connected")})
 
 app.set("view engine","ejs")

@@ -1,11 +1,9 @@
 import express from "express"
 const router = express.Router();
-import {handle1,handle2 } from "../controllers/handle1.js"
+import {handle1,handle2,handle3 } from "../controllers/handle1.js"
 
 
-router.get("/",(req,res)=>{
-  res.render("home")
-})
+router.get("/",handle3)
 router.get("/:id",handle1)
 router.post("/form",handle2)
 router.get("/xyz",(req,res)=>{

@@ -12,5 +12,8 @@
     <input type="text" name="url" placeholder="example.com" required>
     <input type="submit">
   </form>
+  <% urls.forEach(url => { %>
+    <%= url.redirectUrl %> <%= url.shortId%> <br>
+  <% }) %>
 </body>
 </html>

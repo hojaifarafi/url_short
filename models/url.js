@@ -14,6 +14,6 @@ const urlSchema = mongoose.Schema({
 },{timeStamp:true})
 
 export default  URL = mongoose.model("url",urlSchema)
-console.log(typeof(URL))
+//console.log(typeof(URL))
 
 // module.exports = URL

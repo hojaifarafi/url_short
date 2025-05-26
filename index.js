@@ -5,7 +5,7 @@ import { router } from "./routes/router1.js";
 // import {dotenv} from "dotenv"
 //import connectToMongoDB from "./connect.js"
 import mongoose from "mongoose";
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 mongoose.connect("mongodb+srv://poderalo71:86011572@claster0.av8coo8.mongodb.net/?retryWrites=true&w=majority&appName=claster0/test");
   //.then(()=> {console.log("mongodb connected")})

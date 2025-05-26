@@ -2,6 +2,7 @@ import express from "express"
 import path from "path"
 const app = express();
 import { router } from "./routes/router1.js";
+// import {dotenv} from "dotenv"
 //import connectToMongoDB from "./connect.js"
 import mongoose from "mongoose";
 const PORT = process.env.PORT;
